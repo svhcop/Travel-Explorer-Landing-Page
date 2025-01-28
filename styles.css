@@ -5,7 +5,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #4B0082; /* Dark Purple */
-    background: #fff; /* White Background */
+    background: #f9f9f9; /* Light Gray Background */
 }
 
 header {
@@ -16,6 +16,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -30,6 +31,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #FFD700; /* Soft Gold */
 }
 
 .nav-links {
@@ -48,7 +50,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #FFD700; /* Gold */
+    color: #FFD700; /* Soft Gold */
 }
 
 .menu-toggle {
@@ -77,18 +79,20 @@ nav {
 }
 
 .cta-button {
-    background: #FFD700; /* Gold */
+    background: #FFD700; /* Soft Gold */
     color: #4B0082; /* Dark Purple */
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
     background: #4B0082; /* Dark Purple */
-    color: #FFD700; /* Gold */
+    color: #FFD700; /* Soft Gold */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .destinations, .packages, .about, .contact {
@@ -111,12 +115,13 @@ nav {
     border-radius: 10px;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #4B0082; /* Dark Purple */
 }
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -126,6 +131,7 @@ nav {
 
 .card h3 {
     margin: 10px 0;
+    color: #4B0082; /* Dark Purple */
 }
 
 .card p {
@@ -134,8 +140,9 @@ nav {
 
 .card .price {
     font-size: 1.5rem;
-    color: #FFD700; /* Gold */
+    color: #FFD700; /* Soft Gold */
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .contact form {
@@ -151,22 +158,24 @@ nav {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: #f9f9f9;
+    background: #fff;
     color: #4B0082; /* Dark Purple */
 }
 
 .contact button {
     background: #4B0082; /* Dark Purple */
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact button:hover {
     background: #800080; /* Lighter Purple */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -175,6 +184,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .social-links a {
@@ -185,7 +195,7 @@ footer {
 }
 
 .social-links a:hover {
-    color: #FFD700; /* Gold */
+    color: #FFD700; /* Soft Gold */
 }
 
 /* Responsive Design */
